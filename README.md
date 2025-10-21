@@ -63,20 +63,7 @@ Run the container for local dev (single-container):
 ```bash
 docker run --rm -it \
   -p 8080:8080 \
-  -e AIRFLOW__CORE__LOAD_EXAMPLES=False \
   da-airflow:2.10.5
-```
-
-Alternatively, for iterative development, mount local folders instead of baking into the image:
-
-```bash
-docker run --rm -it \
-  -p 8080:8080 \
-  -e AIRFLOW__CORE__LOAD_EXAMPLES=False \
-  -v "$(pwd)/dags:/opt/airflow/dags" \
-  -v "$(pwd)/plugins:/opt/airflow/plugins" \
-  -v "$(pwd)/include:/opt/airflow/include" \
-  apache/airflow:2.10.5-python3.11 airflow standalone
 ```
 
 ## Verify the Example DAG
