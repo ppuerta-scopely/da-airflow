@@ -80,4 +80,3 @@ docker run --rm -it \
   - In one terminal: `airflow webserver`
   - In another: `airflow scheduler`
   - Create a user if needed: `airflow users create --role Admin --username admin --email admin@example.com --firstname Admin --lastname User --password admin`
-- To keep the UI clean, examples are disabled in code; if you still see many example DAGs, set `AIRFLOW__CORE__LOAD_EXAMPLES=False` in your env.
