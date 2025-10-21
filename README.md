@@ -11,36 +11,7 @@ Data Academy - Airflow Module
 - **`requirements.txt`**: Python dependencies.
  - **`.gitignore`**: Common ignores for Python/Airflow projects.
 
-## Prerequisites
-
-- Python 3.10–3.12 installed and available as `python3`.
-- Recommended: a virtual environment (e.g., `python3 -m venv .venv && source .venv/bin/activate`).
-
-## Install Dependencies
-
-Airflow recommends installing with constraints matching your Python version.
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-
-# Find your Python version (e.g., 3.11)
-PY_VER=$(python -c 'import sys;print(f"{sys.version_info.major}.{sys.version_info.minor}")')
-
-pip install --upgrade pip
-pip install "apache-airflow==2.10.5" \
-  --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-${PY_VER}.txt"
-```
-Alternatively, `pip install -r requirements.txt` (constraints still recommended).
-
 ## Run Airflow (Quick Start)
-Run everything in one command using Airflow Standalone (for local dev):
-
-```bash
-# from the repo root
-export AIRFLOW_HOME="$(pwd)/.airflow"
-airflow standalone
-```
 
 This will:
 
