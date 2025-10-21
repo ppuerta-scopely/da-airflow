@@ -1,0 +1,29 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Airflow generated files and directories
+.airflow/
+airflow.db
+webserver_config.py
+unittests.cfg
+logs/
+*.pid
+
+# Environment files
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store

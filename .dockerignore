@@ -1,0 +1,26 @@
+# VCS
+.git
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+.env
+
+# Airflow runtime artifacts
+.airflow/
+airflow.db
+webserver_config.py
+logs/
+*.pid
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
