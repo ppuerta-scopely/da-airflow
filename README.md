@@ -1,4 +1,4 @@
-# da-airflow
+# Data Academy - Airflow Hands-on Excercise
 Data Academy - Airflow Module
 
 ## Repository Structure
