@@ -35,10 +35,6 @@ def qc_nulls(**_):
 def qc_ranges(**_):
     print("Range check passed.")
 
-def qc_summary(**context):
-    rows = context["ti"].xcom_pull(key="row_count", task_ids="transform_data")
-    print(f"QC summary for {rows} rows.")
-
 # Notifications
 def notify_success(**_):
     print("Pipeline succeeded.")
